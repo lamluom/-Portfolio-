@@ -1,0 +1,372 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  height: 50vh;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8),
+    rgba(102, 51, 0, 0.8)
+  );
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+header h1 {
+  font-size: 50px;
+  margin-top: 10%;
+}
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* Personal Skills Section */
+/* Personal Skills Section */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.progress-bar {
+  background-color: #4caf50;
+  height: 25px;
+  border-radius: 5px 0 0 5px;
+}
+
+.progress-text {
+  margin-left: 10px;
+}
+
+/***********/
+.contact,
+.project-portfolio,
+.notable-projects,
+.experience-1,
+.education,
+.personal-info,
+.intro-section :hover {
+  cursor: pointer;
+  opacity: 4;
+}
+.education-item {
+  cursor: pointer;
+  opacity: 2;
+}
+.profile-image {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-54%);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #fff;
+  object-fit: cover;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.personal-info,
+.education,
+.skills,
+.notable-projects {
+  margin-bottom: 20px;
+
+  height: 50vh;
+
+  background: linear-gradient(
+    to right,
+    rgba(128, 131, 138, 0.8),
+    rgba(102, 51, 0, 0.8)
+  );
+  position: relative;
+}
+/* Styling the progress bar */
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.progress-bar {
+  height: 8px;
+  border-radius: 5px;
+  background: #4caf50;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+/**/
+.experience,
+.intro-section,
+.contact {
+  margin-bottom: 20px;
+  height: 50vh;
+  background: linear-gradient(
+    to right,
+    rgba(128, 131, 138, 0.8),
+    rgba(102, 51, 0, 0.8)
+  );
+  position: relative;
+}
+.experience {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px; /* لتحديد عرض المحتوى بحيث يكون في وسط الصفحة */
+}
+
+.experience h2 {
+  font-size: 2.5em; /* حجم العنوان */
+  margin-bottom: 20px;
+}
+
+.experience-text {
+  font-size: 1.2em; /* حجم النص */
+  line-height: 1.6; /* تباعد الأسطر لزيادة سهولة القراءة */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    padding: 15px 0;
+  }
+  section {
+    padding: 15px;
+  }
+}
+
+.tran:hover {
+  padding-left: 25px;
+  text-shadow: rgb(215, 6, 48);
+  border-radius: 30px;
+  background-color: white;
+  transition-duration: 0.5s;
+  background-color: #333;
+}
+
+.trant:hover {
+  color: blue;
+  padding-left: 25px;
+  text-shadow: rgb(215, 6, 48);
+  border-radius: 30px;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+.trantr :hover {
+  color: blue;
+  padding-left: 25px;
+  text-shadow: rgb(215, 6, 48);
+  border-radius: 30px;
+  background-color: rgb(223, 220, 220);
+  transition-duration: 0.5s;
+}
+.btn {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #0057a5;
+}
+.btnn {
+}
+
+/* New Section Styling */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.intro-section .image {
+  position: relative;
+  width: 35%;
+}
+
+.intro-section img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid rgb(118, 111, 111);
+}
+
+.intro-section .content {
+  width: 50%;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.education-row {
+  display: flex;
+  justify-content: space-between; /* أو space-around حسب التصميم الذي تريده */
+}
+
+.education-item {
+  flex: 1; /* أو عرض محدد حسب الحاجة */
+  margin: 0 10px; /* لإضافة مساحة بين العناصر */
+}
+/*EWWWWWWWWWWWWWW*/
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.progress-bar {
+  height: 20px;
+  border-radius: 5px;
+  background: #4caf50;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    padding: 15px 0;
+  }
+  section {
+    padding: 15px;
+  }
+}
+
+/* Adding styling for links and buttons */
+.btn {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #0057a5;
+}
+.contact {
+  background-color: skyblue;
+  padding: 20px;
+  text-align: center;
+}
+.contact h2 {
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+.contact a {
+  color: white;
+  background-color: #0077b5;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.contact a:hover {
+  background-color: #0066cc;
+}
+.contact i:hover {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.contact .footer__copy:hover {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.contact i {
+  margin-right: 10px;
+}
+.contact i {
+  font-size: 18px; /* Reduced font size for smaller icons */
+  background-color: white;
+  color: black;
+  padding: 8px; /* Reduced padding */
+  border-radius: 50%;
+}
+
+/* Footer styling to center text */
+.footer__copy {
+  font-size: 20px; /* Increased font size */
+  color: lightgray;
+  text-align: center; /* Center the footer text horizontally */
+  margin-top: auto; /* Push the footer to the bottom */
+  padding: 20px;
+}
+
+.footer__copy a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: lightgray;
+  text-decoration: none;
+}
